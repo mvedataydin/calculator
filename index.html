@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A simple Calculator</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <div class="calculator-container">
+      <table id="calculator">
+        <tr  class="calc-storage-row" id="result-storage-row">
+          <td colspan="4" id="previous-result">2345+</td>
+        </tr>
+        <tr class="calc-row" id="result-row">
+            <td colspan="4" id="current-result">1294</td>
+          </tr>
+        <tr class="calc-row">
+          <td><input class ="color-funcbuttons" type="button" value="AC" /></td>
+          <td><input class ="color-funcbuttons" type="button" value="+/-" /></td> 
+          <td><input class ="color-funcbuttons" type="button" value="⌫" /></td>
+          <td><input class="color-divide" type="button" value="÷" /></td>
+        </tr>
+        <tr class="calc-row">
+          <td><input type="button" value="7"/></td>
+          <td><input type="button" value="8"/></td> 
+          <td><input type="button" value="9"/></td>
+          <td><input class="color-multiply" type="button" value="∗"/></td>
+        </tr>
+        <tr class="calc-row">
+          <td><input type="button" value="4"/></td>
+          <td><input type="button" value="5"/></td> 
+          <td><input type="button" value="6"/></td>
+          <td><input class="color-minus" type="button" value="-"/></td>
+        </tr>
+        <tr class="calc-row">
+          <td><input type="button" value="1"/></td>
+          <td><input type="button" value="2"/></td> 
+          <td><input type="button" value="3"/></td>
+          <td><input class="color-plus" type="button" value="+"/></td>
+        </tr>
+        <tr class="calc-row">
+          <td colspan="2"><input type="button" value="0"/></td>
+          <td><input type="button" value="."/></td> 
+          <td><input class="color-equal" type="button" value="="/></td>
+        </tr>
+      </table>
+    </div>
+  <script type="text/javascript" src="./live.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
