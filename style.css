@@ -1,100 +1,96 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: normal;
-    
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+  font-weight: normal;
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to left, rgb(116, 237, 253), rgb(245, 82, 82));
-  }
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to left, rgb(116, 237, 253), rgb(245, 82, 82));
+}
 
-  .calculator-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 800px;
-    min-width: 200px;
-  }
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 800px;
+  min-width: 200px;
+}
 
 #previous-result {
-    margin: 12px 12px 12px 12px;
-    padding: 12px 12px 12px 12px;
-    color: rgba(255,255,255, 0.65);
-    font-size: 1.5rem;
-  }
+  margin: 12px 12px 12px 12px;
+  padding: 12px 12px 12px 12px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.5rem;
+}
 
-#current-result{
-    margin: 12px 12px 12px 12px;
-    padding: 12px 12px 12px 12px;
-    color: rgba(255,255,255, 0.95);
-    font-size:2.5rem;
+#current-result {
+  margin: 12px 12px 12px 12px;
+  padding: 12px 12px 12px 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 2.5rem;
 }
 
 input {
-    height : 100%;
-    width: 100%;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: rgba(0,0,0, 0.9);
-    padding: 25px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    outline:none;
+  height: 100%;
+  width: 100%;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  outline: none;
 }
 
-input:hover{
- cursor: pointer;
+input:hover {
+  cursor: pointer;
 }
 
-.calc-storage-row{
-    background-color: rgba(0,0,0, 0.6);
-    padding:0;
-    margin:0;
-    height: 50px;
-    text-align: right;
-    border-collapse: collapse;
+.calc-storage-row {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  text-align: right;
+  border-collapse: collapse;
 }
 
-#result-row{
-    background-color: rgba(0,0,0, 0.6);
-    padding:0;
-    margin:0;
-    height: 35px;
-    text-align: right;
-    border-collapse: collapse;
+#result-row {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  text-align: right;
+  border-collapse: collapse;
 }
 
-
-
-.color-divide{
-    background-color: #20b2aa;
+.color-divide {
+  background-color: #20b2aa;
 }
 
-.color-multiply{
-    background-color: #ffa500;
+.color-multiply {
+  background-color: #ffa500;
 }
 
-.color-minus{
-    background-color: #f08080;
+.color-minus {
+  background-color: #f08080;
 }
 
-.color-plus{
-    background-color: #7d93e0;
+.color-plus {
+  background-color: #7d93e0;
 }
 
-.color-equal{
-    background-color: #9477af;
+.color-equal {
+  background-color: #9477af;
 }
 
 .color-funcbuttons {
-    background-color: rgba(255,255,255, .3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
-
-
-
