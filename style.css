@@ -19,11 +19,6 @@
     min-height: 800px;
     min-width: 200px;
   }
-  #calc-row {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #previous-result {
     margin: 12px 12px 12px 12px;
