@@ -51,6 +51,11 @@ input {
 
 input:hover {
   cursor: pointer;
+
+}
+
+input:active {
+    filter: brightness(50%);
 }
 
 .calc-storage-row {
@@ -71,26 +76,30 @@ input:hover {
   border-collapse: collapse;
 }
 
-.color-divide {
+.divide {
   background-color: #20b2aa;
 }
 
-.color-multiply {
+.multiply {
   background-color: #ffa500;
 }
 
-.color-minus {
+.minus {
   background-color: #f08080;
 }
 
-.color-plus {
+.plus {
   background-color: #7d93e0;
 }
 
-.color-equal {
+.equal {
   background-color: #9477af;
 }
 
-.color-funcbuttons {
+.funcbuttons {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.size-fix{
+  font-size:18.9px;
 }
