@@ -10,7 +10,6 @@ let dot = document.querySelector(".dot");
 let invert = document.querySelector(".invert");
 let operantButtons = document.querySelectorAll(".operant");
 
-
 let n = displayMain.textContent;
 let s = displayStored.textContent;
 let currentOperant = "";
@@ -43,8 +42,6 @@ function calc(){
   };
   return operant;
 }
-
-
 
 function doCalc(){
   let calculate = calc();
@@ -203,7 +200,6 @@ clearButton.addEventListener("click", function(e){
   n = "";
   s = "";
 });
-
 
 function thousandsSeperator(val){
     var valParts = val.toString().split(".");
