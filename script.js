@@ -130,6 +130,10 @@ invert.addEventListener("click", function(e) {
     displayMain.textContent = "-" + displayMain.textContent;
     n =String(displayMain.textContent.replace(/\ /g,''));
   }
+  else {
+    displayMain.textContent = "-" + displayMain.textContent;
+    n ="-"
+  }
 });
   
 dot.addEventListener("click", function(e){
