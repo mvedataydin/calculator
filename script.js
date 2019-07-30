@@ -45,6 +45,8 @@ function calc(){
 
 function doCalc(){
   let calculate = calc();
+  s = s.toString().replace(/\ /g,'');
+  n = n.toString().replace(/\ /g,'');
   if(displayStored.textContent.indexOf("-") > -1 && n !== "" && displayStored.textContent.charAt(displayStored.textContent.length-1) == "-"){
     s = calculate.subtract(Number(s), Number(n));
     return s;
@@ -124,9 +126,13 @@ numButtons.forEach(number => {
   });
 
 invert.addEventListener("click", function(e) {
-  if(displayMain.textContent.indexOf("-") > -1){
+  if(displayMain.textContent.indexOf("-") > -1 && displayMain.textContent != "-0"){
     displayMain.textContent = displayMain.textContent.replace(/\-/g, '');
     n = String(displayMain.textContent.replace(/\ /g,''));
+  }
+  else if(displayMain.textContent == "-0"){
+    displayMain.textContent = "0";
+    n = "";
   }
   else if(displayMain.textContent != "0"){
     displayMain.textContent = "-" + displayMain.textContent;
@@ -154,6 +160,8 @@ equal.addEventListener("click", function(e) {
     return;
   }
   else if (currentOperant == "+") {
+    console.log(n);
+    console.log(Number(s.replace(/\ /g,'')));
     doCalc();
     displayMain.textContent = thousandsSeperator(s);
     displayStored.textContent = '';
