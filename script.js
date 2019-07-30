@@ -80,21 +80,25 @@ operantButtons.forEach(operant => {
     if ( currentOperant == "+" && s !== "") {
       doCalc();
       displayStored.textContent = separated(s) + String(operant.value);
+      n = "";
       return;
     }
     if ( currentOperant == "-" && s !== "") {
       doCalc();
       displayStored.textContent = separated(s) + String(operant.value);
+      n = "";
       return;
     }
     if ( currentOperant == "÷" && s !== ""){
       doCalc();
       displayStored.textContent = separated(s) + String(operant.value);
+      n = "";
       return;
     }
     if ( currentOperant == "∗" && s !== ""){
       doCalc();
       displayStored.textContent = separated(s) + String(operant.value);
+      n = "";
       return;
     }
   });
@@ -147,36 +151,36 @@ dot.addEventListener("click", function(e){
     }
   });
 
-  equal.addEventListener("click", function(e) {
-    if (currentOperant == "+") {
-      doCalc();
-      displayMain.textContent = separated(s);
-      displayStored.textContent = '';
-      s = "";
-      n = "";
-    }
-    else if(currentOperant == "-") {
-      doCalc();
-      displayMain.textContent = separated(s);
-      displayStored.textContent = '';
-      s = "";
-      n = "";
-    }
-    else if(currentOperant == "÷"){
-      doCalc();
-      displayMain.textContent = separated(s);
-      displayStored.textContent = '';
-      s = "";
-      n = "";
-    }
-    else if(currentOperant == "∗"){
-      doCalc();
-      displayMain.textContent = separated(s);
-      displayStored.textContent = '';
-      s = "";
-      n = "";
-    }
-  });
+equal.addEventListener("click", function(e) {
+  if (currentOperant == "+") {
+    doCalc();
+    displayMain.textContent = separated(s);
+    displayStored.textContent = '';
+    s = "";
+    n = "";
+  }
+  else if(currentOperant == "-") {
+    doCalc();
+    displayMain.textContent = separated(s);
+    displayStored.textContent = '';
+    s = "";
+    n = "";
+  }
+  else if(currentOperant == "÷"){
+    doCalc();
+    displayMain.textContent = separated(s);
+    displayStored.textContent = '';
+    s = "";
+    n = "";
+  }
+  else if(currentOperant == "∗"){
+    doCalc();
+    displayMain.textContent = separated(s);
+    displayStored.textContent = '';
+    s = "";
+    n = "";
+  }
+});
 
 deleteButton.addEventListener("click", function(e) {
   if ( n == 0 || n == "" || n.length == 1){
